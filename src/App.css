@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBDBDB;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid black;
+    padding: 1rem 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.ascii-img-container {
+    background-color: black;
+    color: white;
+    font-family: 'Courier';
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 3.999px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grayscale-img-container, .ascii-img-container {
+    border-radius: 0.5rem;
+}
+
+.change-button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #5C5C5C;
+    background-color: #CCCBCB;
+}
+
+.change-button:hover {
+    background-color: #9C9C9C;
+}
+
+.contact-container {
+    margin-top: 2rem;
+}
+
+.contact-container > a > i {
+    font-size: 2rem;
+}
+
+.contact-container > a:first-child {
+    margin-right: 2rem;
+}
+
+.hide {
+    display: none;
 }
